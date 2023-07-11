@@ -4,11 +4,13 @@ public class Duck {
 
     String color;
 
+    public static String name;
+
     Duck(String color){
         this.color = color;
     }
 
-    public void swim(){
+    public final void swim(){
         System.out.println("The duck is Swimming");
     }
 

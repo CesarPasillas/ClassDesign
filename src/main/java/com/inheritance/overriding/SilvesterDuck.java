@@ -2,6 +2,8 @@ package com.inheritance.overriding;
 
 public class SilvesterDuck extends Duck{
 
+    String name;
+
     SilvesterDuck(String color){
         super(color);
     }
@@ -29,6 +31,7 @@ public class SilvesterDuck extends Duck{
         System.out.println("The Silvester Duck is eating ");
     }
 
+
     @Override
     public SilvesterDuck makeDuckling() {
 
@@ -52,6 +55,9 @@ public class SilvesterDuck extends Duck{
         duck.walk();
         makeNoise();
         Duck.makeNoise();
+        Duck.name = "";
+        duck.name = "Lucas";
+
         Duck patito = duck.makeDuckling();
 
     }
